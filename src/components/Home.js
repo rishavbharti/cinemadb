@@ -1,7 +1,6 @@
 import React, {useState} from "react";
-import Navbar from './Navbar'
 import Banner from './Banner'
-import MovieList from './MovieList'
+import RenderList from './RenderList'
 import './component-styles.scss'
 
 export const MoviesList = React.createContext();
@@ -12,10 +11,9 @@ export default function Home() {
 
   return (
     <div>
-      <MoviesList.Provider value={{list, setList}}>
-        <Navbar />
+      <MoviesList.Provider value={{list, setList}}>      
         <Banner bannerTitle={bannerTitle}/>
-        <MovieList />
+        <RenderList list={list}/>
       </MoviesList.Provider>
     </div>
   );

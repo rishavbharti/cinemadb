@@ -1,0 +1,55 @@
+a
+{
+  text-decoration: none;
+  color: white;
+}
+nav, ul
+{
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(3,37,65, 1);
+  margin: 0;
+  padding: 0;
+  color: white;
+  li
+  {
+    margin: 8px;
+  }
+}
+.banner
+{
+  background-image: url('https://image.tmdb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/r2NcIZ1FPMlxCty3vRITVTgGNVS.jpg');
+  min-height: 300px;
+  height: calc(100vh / 2.5);
+  max-height: 360px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-top: 0;
+  padding: 0.5em 2em 0 1em;
+  font-size: 1.2rem;
+}
+.searchbar form
+{
+  margin-top: 5%;
+  display: flex;
+  flex-flow: nowrap;
+  input
+  {
+    padding: 1em;
+    border-radius: 30px;
+    width: 60vw;
+  }
+  button
+  {
+    padding: 1em;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from './SearchBar'
+import SearchResults from './SearchResults'
 import "./component-styles.scss";
 
 export default function Banner({bannerTitle}) {
@@ -7,7 +7,7 @@ export default function Banner({bannerTitle}) {
     <div className='banner'>
       <h1>Welcome.</h1>
       <h2>{bannerTitle}</h2>
-      <SearchBar />
+      <SearchResults />
     </div>
   );
 }

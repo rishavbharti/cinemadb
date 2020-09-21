@@ -12,15 +12,24 @@ const LINKS = [
 export default function Navbar() {
   return (
     <nav>
-      <ul><li>{<Link to="/"><h1>CINEMAdb</h1></Link>}</li></ul>
       <ul>
-        {LINKS.map(link => {
-          return (
-            <li key={link.to}>{<Link to={link.to}>{link.text}</Link>}</li>
-          )
+        <li>
+          {
+            <Link to="/">
+              <h1>CINEMAdb</h1>
+            </Link>
+          }
+        </li>
+      </ul>
+      <ul>
+        {LINKS.map((link) => {
+          return <li key={link.to}>{<Link to={link.to}>{link.text}</Link>}</li>;
         })}
       </ul>
-      <ul><li>{<Link to="/watchlist">Watchlist</Link>}</li></ul>
+      <ul>
+        <li>{<Link to="/watchlist">Watchlist</Link>}</li>
+        <li>{<Link to="/watched">Watched</Link>}</li>
+      </ul>
     </nav>
   );
 }

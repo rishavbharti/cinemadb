@@ -55,16 +55,20 @@ nav, ul
 }
 .card-list
 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   ul
   {
     background-color: white;
-    margin-top: 20px;
+    margin-top: 5rem;
   }
   .card
   {
     // border: 1px solid black;
     color: black;
     margin: 10px;
+    text-overflow: wrap;
     img
     {
       border-radius: 30px;
@@ -78,17 +82,21 @@ nav, ul
     .caption
     {
       // border: 1px solid black;
-      // border-top-style: none;
-      // border-bottom-left-radius: 30px;
-      // border-bottom-right-radius: 30px;
-      // padding: 2px;
-      // margin-top: 0;
-      // background-color: rgba(3,37,65, 1);
-      // font-weight: lighter;
+      width: 200px;
     }
     h4, p 
     {
       margin: 0px;
+    }
+    .filler-poster 
+    {
+      text-align: center;
+      padding: 80px;
+      width: 50px;
+      height: 130px;
+      background-color: #dbdada;
+      border-radius: 30px;
+      color: darkgray;
     }
   }
 }

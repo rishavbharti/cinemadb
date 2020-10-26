@@ -3,7 +3,7 @@ import MovieCard from "./MovieCard"
 import "./component-styles.scss";
 
 export default function SearchResults() {
-  const [term, setTerm] = useState("");
+  const [term, setTerm] = useState("space");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [list, setList] = useState([])
